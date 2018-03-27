@@ -214,7 +214,7 @@ exports.playCmd = (socket, rl) => {
 				toBeResolved.push(quiz.id);
 			})
 		.then(() => {
-			playOne(rl, toBeResolved, score)
+			playOne(socket, rl, toBeResolved, score)
 		});
 
 };
